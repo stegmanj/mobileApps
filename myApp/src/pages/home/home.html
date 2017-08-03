@@ -1,0 +1,45 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      Startseite
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <ion-item>
+      <ion-icon name="md-help" item-left></ion-icon>
+      Hilfe: <a href="http://ionicframework.com/docs/v2">Dokumentation</a>
+    </ion-item>
+    <ion-item>
+      <ion-icon name="md-battery-charging" item-left></ion-icon>
+      {{batterystatus}}      
+    </ion-item>
+    <ion-item>
+      <ion-icon name="md-phone-portrait" item-left></ion-icon>
+      Orientation: {{winOrientation}}
+    </ion-item>
+  </ion-list>
+
+  <h4>Funktionen</h4>
+  <ion-list>
+    <ion-item>
+      <ion-icon name="md-camera" item-left></ion-icon>
+      <button id="btnNextpage" (click)="navToPage('NextPage')" ion-button>Fotos</button>
+    </ion-item>
+    <ion-item>
+      <ion-icon name="md-mail" item-left></ion-icon>
+      <button id="btnMsg" (click)="showAlert('Hallo!')" ion-button>Nachricht</button>
+    </ion-item>
+    <ion-item>
+      <ion-icon name="md-contacts" item-left></ion-icon>
+      <button id="btnContacts" (click)="navToPage('Kontakte')" ion-button>Kontakte</button>
+    </ion-item>
+    
+  </ion-list>
+
+</ion-content>

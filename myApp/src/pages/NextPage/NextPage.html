@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      Fotos
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content style="text-align: center">
+  <button id="btnTakePic" (click)="takePicture()" ion-button><ion-icon name="md-camera" item-left></ion-icon></button>
+  <button id="btnGetPic" (click)="getPicture()" ion-button><ion-icon name="md-images" item-left></ion-icon></button>
+  <button id="btnSavePic" (click)="saveToGalery()" ion-button><ion-icon name="md-cloud-download" item-left></ion-icon></button>
+  <button id="btnSharePic" (click)="share()" ion-button><ion-icon name="md-share" item-left></ion-icon></button>
+  <!--button id="btnRemovePic"  ion-button><ion-icon name="md-trash" item-left></ion-icon></button-->
+
+  <img id="picture">
+  
+</ion-content>

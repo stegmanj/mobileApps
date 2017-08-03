@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      Kontakte
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+    <h4>Neuer Kontakt</h4>
+    <ion-list>
+        <ion-item>
+        Vorname:
+        <input name="vorname" placeholder="Vorname" [(ngModel)]="vorname"> 
+        </ion-item>
+        <ion-item>
+        Nachname:
+        <input name="nachname" placeholder="Nachname" [(ngModel)]="nachname">   
+        </ion-item>
+        <ion-item>
+            Handynummer:
+            <input name="hnummer" placeholder="Handynummer" [(ngModel)]="hnummer">
+        </ion-item>
+    </ion-list>
+  <button id="btnSaveContact" (click)="createContact()" ion-button>Speichern</button>
+</ion-content>
